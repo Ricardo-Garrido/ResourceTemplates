@@ -40,10 +40,10 @@
         "description": "Storage Account/GitHub base uri for required files"
       }
     }
-  }, 
+  },
   "variables": {
     "StorageAccount": {
-      "Name": "[concat(parameters('envPrefix'),'storage2405')]",
+      "Name": "emsdemostorage2405",
       "Type": "Standard_LRS",
       "Location": "[parameters('envLocation')]",
       "EndPoint": "blob.core.windows.net"
@@ -67,15 +67,15 @@
     "vmConfiguration": {
       "dc": {
         "name": "DC",
-        "size": "Standard_DS2_v2"
+        "size": "Standard_A1"
       },
       "adfs": {
         "name": "ADFS",
-        "size": "Standard_DS2_v2"
+        "size": "Standard_A1"
       },
       "wap": {
         "name": "WAP",
-        "size": "Standard_DS2_v2"
+        "size": "Standard_A1"
       }
     }
   },
