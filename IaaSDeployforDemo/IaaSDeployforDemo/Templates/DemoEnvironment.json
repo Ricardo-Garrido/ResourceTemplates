@@ -40,7 +40,7 @@
         "description": "Storage Account/GitHub base uri for required files"
       }
     }
-  },
+  }, 
   "variables": {
     "StorageAccount": {
       "Name": "[concat(parameters('envPrefix'),'storage2405')]",
