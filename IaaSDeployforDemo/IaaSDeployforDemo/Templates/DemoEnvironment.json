@@ -11,7 +11,7 @@
     },
     "envLocation": {
       "type": "string",
-      "defaultValue": "West Europe",
+      "defaultValue": "North Europe",
       "allowedValues": [
         "North Europe",
         "West Europe"
@@ -22,7 +22,7 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "adm",
+      "defaultValue": "demoadmin",
       "metadata": {
         "description": "Admin username for environment"
       }
@@ -35,7 +35,7 @@
     },
     "artifactsLocation": {
       "type": "string",
-      "defaultValue": "https://github.com/Ricardo-Garrido/ResourceTemplates/tree/master/IaaSDeployforDemo/IaaSDeployforDemo",
+      "defaultValue": "https://raw.githubusercontent.com/Ricardo-Garrido/ResourceTemplates/tree/master/IaaSDeployforDemo/IaaSDeployforDemo",
       "metadata": {
         "description": "Storage Account/GitHub base uri for required files"
       }
