@@ -11,7 +11,7 @@
     },
     "envLocation": {
       "type": "string",
-      "defaultValue": "North Europe",
+      "defaultValue": "West Europe",
       "allowedValues": [
         "North Europe",
         "West Europe"
@@ -22,7 +22,7 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "demoadmin",
+      "defaultValue": "adm",
       "metadata": {
         "description": "Admin username for environment"
       }
@@ -35,7 +35,7 @@
     },
     "artifactsLocation": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/rikhepworth/ResourceTemplates/master/IaaSDeployforDemo/IaaSDeployforDemo",
+      "defaultValue": "https://github.com/Ricardo-Garrido/ResourceTemplates/tree/master/IaaSDeployforDemo/IaaSDeployforDemo",
       "metadata": {
         "description": "Storage Account/GitHub base uri for required files"
       }
@@ -43,7 +43,7 @@
   },
   "variables": {
     "StorageAccount": {
-      "Name": "[concat(parameters('envPrefix'),'storage')]",
+      "Name": "[concat(parameters('envPrefix'),'storage2405')]",
       "Type": "Standard_LRS",
       "Location": "[parameters('envLocation')]",
       "EndPoint": "blob.core.windows.net"
@@ -67,15 +67,15 @@
     "vmConfiguration": {
       "dc": {
         "name": "DC",
-        "size": "Standard_A1"
+        "size": "Standard_DS2_v2"
       },
       "adfs": {
         "name": "ADFS",
-        "size": "Standard_A1"
+        "size": "Standard_DS2_v2"
       },
       "wap": {
         "name": "WAP",
-        "size": "Standard_A1"
+        "size": "Standard_DS2_v2"
       }
     }
   },
